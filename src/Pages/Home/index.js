@@ -1,6 +1,10 @@
-export default function Home() {
+import Header from "../../Header/Header";
+import "./index.css";
+export default function Home({ drawerController }) {
   return (
     <>
+      <Header changeDrawerState={drawerController} />
+
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>

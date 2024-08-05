@@ -23,9 +23,7 @@ import {
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Drawer() {
-  const [open, setOpen] = React.useState(true);
-
+export default function Drawer({ open, setOpen }) {
   const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
@@ -36,7 +34,7 @@ export default function Drawer() {
     {
       text: "Home",
       icon: <Home />,
-      redirectTo: () => navigate("/home"),
+      navLink: "/home",
     },
     {
       text: "Pacttos (Chats)",
@@ -168,8 +166,13 @@ export default function Drawer() {
             key={index}
             sx={{
               padding: "0px",
+              backgroundColor:
+                window.location.pathname === item.navLink ? "#3a363f" : "",
               ":hover": {
-                backgroundColor: "#3f3f3f",
+                backgroundColor:
+                  window.location.pathname === item.navLink
+                    ? "#49464e"
+                    : "#3f3f3f",
               },
             }}
             disablePadding
@@ -178,11 +181,14 @@ export default function Drawer() {
               sx={{
                 padding: "12px 32px",
               }}
-              onClick={item.redirectTo}
+              onClick={() => navigate(item.navLink)}
             >
               <ListItemIcon
                 sx={{
-                  color: "#b8b8b8",
+                  color:
+                    window.location.pathname === item.navLink
+                      ? "#1dbba5"
+                      : "#b8b8b8",
                   minWidth: "24px",
                   margin: "0px 12px 0px 0px",
                 }}
@@ -193,6 +199,10 @@ export default function Drawer() {
                 <Typography
                   sx={{
                     font: "14px Roboto,sans-serif",
+                    color:
+                      window.location.pathname === item.navLink
+                        ? "#1dbba5"
+                        : "#b8b8b8",
                   }}
                 >
                   {item.text}
