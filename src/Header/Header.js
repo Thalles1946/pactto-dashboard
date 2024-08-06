@@ -8,15 +8,15 @@ export default function Header({ changeDrawerState }) {
 
   const headerTitles = [
     { path: "/home", tittle: "My uploads" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
-    { path: "", tittle: "" },
+    { path: "/pacttos", tittle: "Pacttos (Chats)" },
+    { path: "/videos-to-review", tittle: "" },
+    { path: "/shared-links", tittle: "" },
+    { path: "/personal-info", tittle: "" },
+    { path: "/packages", tittle: "" },
+    { path: "/profile", tittle: "" },
+    { path: "/library", tittle: "" },
+    { path: "/subscription", tittle: "" },
+    { path: "/review-settings", tittle: "" },
   ];
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Header({ changeDrawerState }) {
       return true;
     });
     // eslint-disable-next-line
-  }, []);
+  }, [window.location.pathname]);
   return (
     <AppBar className="header-container">
       <Toolbar>

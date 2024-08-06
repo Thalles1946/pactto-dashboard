@@ -39,38 +39,47 @@ export default function Drawer({ open, setOpen }) {
     {
       text: "Pacttos (Chats)",
       icon: <Chat />,
+      navLink: "/pacttos",
     },
     {
       text: "Items to review",
       icon: <VideoCall />,
+      navLink: "/videos-to-review",
     },
     {
       text: "Web links you created",
       icon: <Link />,
+      navLink: "/shared-links",
     },
     {
       text: "Personal information",
       icon: <AccountBox />,
+      navLink: "/personal-info",
     },
     {
       text: "Review packages for sale",
       icon: <GifTwoTone />,
+      navLink: "/packages",
     },
     {
       text: "Pactto website",
       icon: <Link />,
+      navLink: "/profile",
     },
     {
       text: "Reference video library",
       icon: <VideoCall />,
+      navLink: "/library",
     },
     {
       text: "Subscription",
       icon: <VideoCameraBack />,
+      navLink: "/subscription",
     },
     {
       text: "Review settings",
       icon: <Settings />,
+      navLink: "/review-settings",
     },
   ];
 

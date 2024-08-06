@@ -5,9 +5,7 @@ import RoutesMap from "./routes";
 function App() {
   return (
     <div className="App">
-      <div className="content">
-        <RoutesMap />
-      </div>
+      <RoutesMap />
     </div>
   );
 }
