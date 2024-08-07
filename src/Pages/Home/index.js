@@ -1,12 +1,9 @@
-import { Button, TextField, Typography } from "@mui/material";
-import Header from "../../Header/Header";
+import { Button, InputAdornment, TextField, Typography } from "@mui/material";
 import "./index.css";
-import { Add } from "@mui/icons-material";
-export default function Home({ drawerController }) {
+import { Add, Search } from "@mui/icons-material";
+export default function Home() {
   return (
     <>
-      {/* <Header changeDrawerState={drawerController} /> */}
-
       <div className="page-content">
         <TextField
           sx={{
@@ -24,6 +21,13 @@ export default function Home({ drawerController }) {
                 borderColor: "#1bac98",
               },
             },
+          }}
+          InputProps={{
+            endAdornment: (
+              <InputAdornment color="#efeff0" position="end">
+                <Search sx={{ color: "#efeff0" }} />
+              </InputAdornment>
+            ),
           }}
           inputProps={{
             style: {

@@ -233,6 +233,11 @@ export default function Drawer({ open, setOpen }) {
                 backgroundColor: "#bebebe",
               },
             }}
+            onClick={() =>
+              alert(
+                "Function still doesn't exist!\nTo implement it, hire the developer 😁"
+              )
+            }
           >
             <Typography
               sx={{
