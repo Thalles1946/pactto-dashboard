@@ -44,7 +44,6 @@ export default function Home() {
           sx={{
             display: "flex",
             width: "20%",
-            height: "20%",
             height: "48px",
             borderRadius: "40px",
             color: "#232225",
