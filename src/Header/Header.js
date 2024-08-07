@@ -9,14 +9,14 @@ export default function Header({ changeDrawerState }) {
   const headerTitles = [
     { path: "/home", tittle: "My uploads" },
     { path: "/pacttos", tittle: "Pacttos (Chats)" },
-    { path: "/videos-to-review", tittle: "" },
-    { path: "/shared-links", tittle: "" },
-    { path: "/personal-info", tittle: "" },
-    { path: "/packages", tittle: "" },
-    { path: "/profile", tittle: "" },
-    { path: "/library", tittle: "" },
-    { path: "/subscription", tittle: "" },
-    { path: "/review-settings", tittle: "" },
+    { path: "/videos-to-review", tittle: "Items to review" },
+    { path: "/shared-links", tittle: "Web links you created" },
+    { path: "/personal-info", tittle: "Personal information" },
+    { path: "/packages", tittle: "Review packages for sale" },
+    { path: "/profile", tittle: "Pactto website" },
+    { path: "/library", tittle: "Reference video library" },
+    { path: "/subscription", tittle: "Subscribe to Pactto" },
+    { path: "/review-settings", tittle: "Review settings" },
   ];
 
   useEffect(() => {
