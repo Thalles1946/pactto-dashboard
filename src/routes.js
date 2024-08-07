@@ -22,46 +22,16 @@ export default function RoutesMap() {
       <Header changeDrawerState={setOpenDrawer} />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route
-          path="/home"
-          element={<Home drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/pacttos"
-          element={<Chats drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/videos-to-review"
-          element={<Review drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/shared-links"
-          element={<WebLinks drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/personal-info"
-          element={<Personal drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/packages"
-          element={<Library drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/profile"
-          element={<Personal drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/library"
-          element={<Library drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/subscription"
-          element={<Subscription drawerController={setOpenDrawer} />}
-        />
-        <Route
-          path="/review-settings"
-          element={<Settings drawerController={setOpenDrawer} />}
-        />
+        <Route path="/home" element={<Home />} />
+        <Route path="/pacttos" element={<Chats />} />
+        <Route path="/videos-to-review" element={<Review />} />
+        <Route path="/shared-links" element={<WebLinks />} />
+        <Route path="/personal-info" element={<Personal />} />
+        <Route path="/packages" element={<Library />} />
+        <Route path="/profile" element={<Personal />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/review-settings" element={<Settings />} />
       </Routes>
     </>
   );

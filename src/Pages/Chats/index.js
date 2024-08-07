@@ -1,6 +1,6 @@
-import { Button, InputAdornment, TextField, Typography } from "@mui/material";
+import { InputAdornment, TextField } from "@mui/material";
 import "./index.css";
-import { Add, Search } from "@mui/icons-material";
+import { Search } from "@mui/icons-material";
 
 export default function Chats() {
   return (
