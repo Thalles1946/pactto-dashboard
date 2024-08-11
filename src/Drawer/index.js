@@ -133,7 +133,7 @@ export default function Drawer({ open, setOpen }) {
                 TRIAL: 14 DAYS LEFT
               </Typography>
 
-              <div className="buttons">
+              <div className="button">
                 <Typography
                   sx={{
                     color: "#FFFFFF",

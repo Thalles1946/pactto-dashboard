@@ -1,0 +1,36 @@
+.text-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 24px;
+  gap: 22px;
+  color: white !important;
+  border-color: #1bac98 !important;
+}
+
+.main-activities {
+  padding: 0px 24px;
+}
+
+.user-password {
+  padding: 0px 24px;
+  gap: 22px;
+}
+.user-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name-field {
+  padding: 0px 24px;
+}
+
+.buttons {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+input:focus {
+  border-color: #ff0000;
+}
