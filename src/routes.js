@@ -11,9 +11,10 @@ import Subscription from "./Pages/Subscription";
 import Settings from "./Pages/Settings";
 import Header from "./Header/Header";
 import "./App.css";
+import Website from "./Pages/Website";
 
 export default function RoutesMap() {
-  const [openDrawer, setOpenDrawer] = React.useState(true);
+  const [openDrawer, setOpenDrawer] = React.useState(false);
 
   return (
     <>
@@ -28,7 +29,7 @@ export default function RoutesMap() {
         <Route path="/shared-links" element={<WebLinks />} />
         <Route path="/personal-info" element={<Personal />} />
         <Route path="/packages" element={<Library />} />
-        <Route path="/profile" element={<Personal />} />
+        <Route path="/profile" element={<Website />} />
         <Route path="/library" element={<Library />} />
         <Route path="/subscription" element={<Subscription />} />
         <Route path="/review-settings" element={<Settings />} />

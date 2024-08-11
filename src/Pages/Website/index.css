@@ -1,0 +1,47 @@
+.text-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  color: white !important;
+  border-color: #1bac98 !important;
+}
+
+.about-me {
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.user-password {
+  gap: 22px;
+}
+.user-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.images {
+  width: 49%;
+}
+
+.fields {
+  width: 49%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
