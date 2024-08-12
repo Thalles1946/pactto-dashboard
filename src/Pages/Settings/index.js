@@ -1,4 +1,5 @@
 import {
+  Button,
   Checkbox,
   FormControl,
   FormControlLabel,
@@ -12,7 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import "./index.css";
-import { Circle, Search } from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
 import React from "react";
 
 export default function Settings() {
@@ -510,6 +511,72 @@ export default function Settings() {
               </MenuItem>
             </Select>
           </FormControl>
+        </div>
+        <div
+          style={{
+            padding: "24px 0px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Button
+            variant="contained"
+            sx={{
+              width: "15%",
+              borderRadius: "40px",
+              padding: "16px 32px",
+              backgroundColor: "#b8b8b8",
+              lineHeight: "48px",
+              ":hover": {
+                backgroundColor: "#bebebe",
+              },
+            }}
+            onClick={() =>
+              alert(
+                "Function still doesn't exist!\nTo implement it, hire the developer 😁"
+              )
+            }
+          >
+            <Typography
+              sx={{
+                color: "#181818",
+                font: "14px Roboto, sans-serif",
+                fontWeight: 600,
+                letterSpacing: "1px",
+              }}
+            >
+              RESET CHANGES
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            sx={{
+              width: "15%",
+              borderRadius: "40px",
+              padding: "16px 32px",
+              backgroundColor: "#1dbba5",
+              lineHeight: "48px",
+              ":hover": {
+                backgroundColor: "#1bac98",
+              },
+            }}
+            onClick={() =>
+              alert(
+                "Function still doesn't exist!\nTo implement it, hire the developer 😁"
+              )
+            }
+          >
+            <Typography
+              sx={{
+                color: "#181818",
+                font: "14px Roboto, sans-serif",
+                fontWeight: 600,
+                letterSpacing: "1px",
+              }}
+            >
+              SAVE CHANGES
+            </Typography>
+          </Button>
         </div>
       </div>
     </div>

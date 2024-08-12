@@ -11,9 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import {
-  AccountBox,
   Chat,
-  GifTwoTone,
   Home,
   Link,
   ManageAccounts,
@@ -21,8 +19,6 @@ import {
   Redeem,
   Settings,
   Subscriptions,
-  VideoCall,
-  VideoCameraBack,
   VideoLibrary,
   ViewCarousel,
 } from "@mui/icons-material";

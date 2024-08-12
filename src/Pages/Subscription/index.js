@@ -172,6 +172,7 @@ export default function Subscription() {
             >
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://pactto.mintlify.app/introduction"
                 class="link"
                 style={{

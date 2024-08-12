@@ -1,19 +1,9 @@
-import { Button, Divider, TextField, Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import React from "react";
 import "./index.css";
-import {
-  AccountCircle,
-  Add,
-  CheckBox as CheckedIcon,
-} from "@mui/icons-material";
+import { AccountCircle, Add } from "@mui/icons-material";
 
 export default function Personal() {
-  const [country, setCountry] = React.useState("");
-
-  const handleChange = (event) => {
-    setCountry(event.target.value);
-  };
-
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
       <div className="content">

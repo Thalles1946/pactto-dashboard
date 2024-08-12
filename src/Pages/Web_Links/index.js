@@ -1,22 +1,11 @@
 import React from "react";
-import {
-  Fab,
-  InputAdornment,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
+import { Fab, InputAdornment, TextField } from "@mui/material";
 import "./index.css";
 import { Search, Visibility, VisibilityOff } from "@mui/icons-material";
 
 export default function WebLinks() {
-  const [alignment, setAlignment] = React.useState("web");
-
   const [visibility, setVisibility] = React.useState(false);
 
-  const handleChange = (event, newAlignment) => {
-    setAlignment(newAlignment);
-  };
   return (
     <>
       <div className="page-content">

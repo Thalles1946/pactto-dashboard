@@ -4,8 +4,6 @@ import {
   FormControl,
   FormControlLabel,
   FormGroup,
-  FormHelperText,
-  Icon,
   InputLabel,
   MenuItem,
   Select,
@@ -14,7 +12,6 @@ import {
 } from "@mui/material";
 import React from "react";
 import "./index.css";
-import { CheckBox as CheckedIcon } from "@mui/icons-material";
 
 export default function Personal() {
   const [country, setCountry] = React.useState("");
