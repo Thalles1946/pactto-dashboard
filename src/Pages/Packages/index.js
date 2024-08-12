@@ -5,7 +5,6 @@ import {
   FormControl,
   FormControlLabel,
   FormGroup,
-  InputLabel,
   MenuItem,
   Select,
   TextField,
