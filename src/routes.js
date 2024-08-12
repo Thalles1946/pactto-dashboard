@@ -12,6 +12,7 @@ import Settings from "./Pages/Settings";
 import Header from "./Header/Header";
 import "./App.css";
 import Website from "./Pages/Website";
+import Packages from "./Pages/Packages";
 
 export default function RoutesMap() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -28,7 +29,7 @@ export default function RoutesMap() {
         <Route path="/videos-to-review" element={<Review />} />
         <Route path="/shared-links" element={<WebLinks />} />
         <Route path="/personal-info" element={<Personal />} />
-        <Route path="/packages" element={<Library />} />
+        <Route path="/packages" element={<Packages />} />
         <Route path="/profile" element={<Website />} />
         <Route path="/library" element={<Library />} />
         <Route path="/subscription" element={<Subscription />} />

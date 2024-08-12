@@ -1,0 +1,35 @@
+.container-package {
+  border: 1px solid #1dbba5;
+  margin: 0px 24px 24px;
+  background-color: #181818;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.options-package {
+  display: flex;
+  justify-content: space-around;
+}
+
+.describe {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.requirements {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cost {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
