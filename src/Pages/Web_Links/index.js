@@ -1,15 +1,18 @@
 import React from "react";
 import {
+  Fab,
   InputAdornment,
   TextField,
   ToggleButton,
   ToggleButtonGroup,
 } from "@mui/material";
 import "./index.css";
-import { Search } from "@mui/icons-material";
+import { Search, Visibility, VisibilityOff } from "@mui/icons-material";
 
 export default function WebLinks() {
   const [alignment, setAlignment] = React.useState("web");
+
+  const [visibility, setVisibility] = React.useState(false);
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
@@ -20,16 +23,15 @@ export default function WebLinks() {
         <TextField
           sx={{
             marginLeft: "26px",
-            paddingRight: "26px",
             "& .MuiOutlinedInput-root": {
               color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
@@ -51,19 +53,18 @@ export default function WebLinks() {
           fullWidth
         />
 
-        <ToggleButtonGroup
-          color="primary"
-          value={alignment}
-          exclusive
-          onChange={handleChange}
-          aria-label="Platform"
+        <Fab
           sx={{
             margin: "8px",
+            backgroundColor: "#1dbba5",
+            "&:hover": {
+              backgroundColor: "#1bac98",
+            },
           }}
+          onClick={() => setVisibility(!visibility)}
         >
-          <ToggleButton value="pub">PUBLIC</ToggleButton>
-          <ToggleButton value="priv">PRIVATE</ToggleButton>
-        </ToggleButtonGroup>
+          {visibility ? <Visibility /> : <VisibilityOff />}
+        </Fab>
       </div>
     </>
   );

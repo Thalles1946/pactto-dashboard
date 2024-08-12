@@ -1,0 +1,30 @@
+.options-checkbox {
+  padding: 0px 24px;
+}
+
+.slider {
+  display: flex;
+  padding: 0px 24px;
+  align-items: center;
+  gap: 18px;
+}
+
+.settings-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+  gap: 8px;
+}
+
+.colors-selector {
+  display: flex;
+  gap: 8px;
+}

@@ -112,21 +112,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}
@@ -146,21 +140,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}
@@ -218,21 +206,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}
@@ -252,21 +234,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}
@@ -286,21 +262,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}
@@ -320,21 +290,15 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&.Mui-focused": {
-                  color: "rgb(255 255 255 / 87%)",
-                  "& fieldset": {
-                    borderColor: "#777678",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
                   },
                 },
               }}

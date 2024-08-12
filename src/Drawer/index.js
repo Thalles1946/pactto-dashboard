@@ -133,7 +133,15 @@ export default function Drawer({ open, setOpen }) {
                 TRIAL: 14 DAYS LEFT
               </Typography>
 
-              <div className="button">
+              <div
+                onClick={() => {
+                  navigate("/subscription");
+                }}
+                className="button"
+                style={{
+                  cursor: "pointer",
+                }}
+              >
                 <Typography
                   sx={{
                     color: "#FFFFFF",
@@ -142,6 +150,9 @@ export default function Drawer({ open, setOpen }) {
                     padding: "6px",
                     fontWeight: 500,
                     borderRadius: "3px",
+                    "&:hover": {
+                      backgroundColor: "#1bac98",
+                    },
                   }}
                 >
                   UPGRADE TO PRO
@@ -220,7 +231,11 @@ export default function Drawer({ open, setOpen }) {
             </ListItemButton>
           </ListItem>
         ))}
-        <footer>
+        <footer
+          style={{
+            width: "100%",
+          }}
+        >
           <Button
             variant="contained"
             sx={{

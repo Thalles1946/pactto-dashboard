@@ -15,9 +15,9 @@ export default function Library() {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },

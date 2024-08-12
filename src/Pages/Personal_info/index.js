@@ -23,6 +23,114 @@ export default function Personal() {
     setCountry(event.target.value);
   };
 
+  const countries = [
+    "Afeghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Central African Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Greece",
+    "Grenada",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Ivory Coast",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "United States",
+  ];
+
   return (
     <div style={{ width: "100%" }}>
       <div className="text-fields">
@@ -38,21 +146,15 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-            },
-            "&.Mui-focused": {
-              color: "rgb(255 255 255 / 87%)",
-              "& fieldset": {
-                borderColor: "#777678",
-              },
-              "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+              "&.Mui-focused fieldset": {
+                borderColor: "#1bac98",
               },
             },
           }}
@@ -72,14 +174,14 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
@@ -137,30 +239,48 @@ export default function Personal() {
             Country
           </InputLabel>
           <Select
-            labelId="demo-simple-select-helper-label"
-            id="demo-simple-select-helper"
+            MenuProps={{
+              PaperProps: {
+                sx: {
+                  backgroundColor: "#424242",
+                  color: "#FFFFFF",
+                  maxHeight: "35%",
+                },
+              },
+            }}
             value={country}
             label="Country"
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {countries.map((data) => (
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value={data}
+              >
+                {data}
+              </MenuItem>
+            ))}
           </Select>
-          {/* <FormHelperText>With label + helper text</FormHelperText> */}
         </FormControl>
       </div>
       <div className="main-activities">
-        <Typography sx={{ margin: "32px 0px 8px", font: "16px Roboto" }}>
+        <Typography
+          sx={{ margin: "32px 0px 8px", font: "16px Roboto", display: "flex" }}
+        >
           What is your main activity? Or activities
         </Typography>
-        <FormGroup>
+        <FormGroup
+          sx={{
+            margin: "10px",
+          }}
+        >
           <FormControlLabel
             control={
               <Checkbox
                 sx={{
-                  "& .MuiCheckbox-root": {
-                    color: "red",
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
                   },
                 }}
               />
@@ -168,13 +288,70 @@ export default function Personal() {
             label="Video"
           />
           <FormControlLabel
-            control={<Checkbox checkedIcon={<CheckedIcon />} />}
+            control={
+              <Checkbox
+                sx={{
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
+                  },
+                }}
+              />
+            }
             label="Design"
           />
-          <FormControlLabel control={<Checkbox />} label="Development" />
-          <FormControlLabel control={<Checkbox />} label="Sports" />
-          <FormControlLabel control={<Checkbox />} label="Medical" />
-          <FormControlLabel control={<Checkbox />} label="Inspections" />
+          <FormControlLabel
+            control={
+              <Checkbox
+                sx={{
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
+                  },
+                }}
+              />
+            }
+            label="Development"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                sx={{
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
+                  },
+                }}
+              />
+            }
+            label="Sports"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                sx={{
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
+                  },
+                }}
+              />
+            }
+            label="Medical"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                sx={{
+                  color: "#eeeeee",
+                  "&.Mui-checked": {
+                    color: "#1dbba5",
+                  },
+                }}
+              />
+            }
+            label="Inspections"
+          />
         </FormGroup>
         <TextField
           InputLabelProps={{
@@ -203,7 +380,9 @@ export default function Personal() {
         />
       </div>
       <div className="user-password">
-        <Typography sx={{ margin: "32px 0px 8px", font: "16px Roboto" }}>
+        <Typography
+          sx={{ margin: "32px 0px 8px", font: "16px Roboto", display: "flex" }}
+        >
           User handle and password
         </Typography>
         <TextField
@@ -214,14 +393,14 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
@@ -238,14 +417,14 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
@@ -262,14 +441,14 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
