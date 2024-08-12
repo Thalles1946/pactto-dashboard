@@ -1,8 +1,12 @@
 import {
   Checkbox,
+  FormControl,
   FormControlLabel,
   FormGroup,
   InputAdornment,
+  InputLabel,
+  MenuItem,
+  Select,
   Slider,
   TextField,
   Typography,
@@ -133,7 +137,7 @@ export default function Settings() {
           max={7}
           sx={{
             color: "#1dbba5",
-            width: "10%",
+            width: "8%",
             "& .MuiSlider-valueLabel": {
               backgroundColor: "#1dbba5",
             },
@@ -150,6 +154,11 @@ export default function Settings() {
         </Typography>
         <div className="colors-selector">
           <TextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             sx={{
               width: "10%",
 
@@ -182,11 +191,16 @@ export default function Settings() {
                 color: "#efeff0",
               },
             }}
-            placeholder="Search"
+            placeholder="#00FF00"
             variant="outlined"
             label="Color 1"
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             sx={{
               width: "10%",
 
@@ -219,11 +233,16 @@ export default function Settings() {
                 color: "#efeff0",
               },
             }}
-            placeholder="Search"
+            placeholder="#00FF00"
             variant="outlined"
             label="Color 2"
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             sx={{
               width: "10%",
 
@@ -256,11 +275,16 @@ export default function Settings() {
                 color: "#efeff0",
               },
             }}
-            placeholder="Search"
+            placeholder="#00FF00"
             variant="outlined"
             label="Color 3"
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             sx={{
               width: "10%",
 
@@ -293,111 +317,199 @@ export default function Settings() {
                 color: "#efeff0",
               },
             }}
-            placeholder="Search"
+            placeholder="#00FF00"
             variant="outlined"
             label="Color 4"
           />
         </div>
+        <Typography
+          sx={{
+            display: "flex",
+          }}
+        >
+          Devices options
+        </Typography>
         <div className="device-selector">
-          <TextField
+          <FormControl
             sx={{
-              marginLeft: "26px",
+              maxWidth: "16%",
 
+              minWidth: 120,
               "& .MuiOutlinedInput-root": {
                 color: "#a7a7a8",
                 "& fieldset": {
                   borderColor: "#777678",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#e2e2e3",
+                  borderColor: "#1bac98",
                 },
-                "&:focus fieldset": {
+                "&.Mui-focused fieldset": {
                   borderColor: "#1bac98",
                 },
               },
             }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment color="#efeff0" position="end">
-                  <Search sx={{ color: "#efeff0" }} />
-                </InputAdornment>
-              ),
-            }}
-            inputProps={{
-              style: {
-                color: "#efeff0",
-              },
-            }}
-            placeholder="Search"
-            variant="outlined"
-            label="Camera"
-          />{" "}
-          <TextField
-            sx={{
-              marginLeft: "26px",
+          >
+            <InputLabel
+              style={{
+                color: "white",
+              }}
+              id="demo-simple-select-helper-label"
+            >
+              Camera
+            </InputLabel>
 
+            <Select
+              MenuProps={{
+                PaperProps: {
+                  sx: {
+                    backgroundColor: "#424242",
+                    color: "#FFFFFF",
+                    maxHeight: "35%",
+                  },
+                },
+              }}
+              label="Camera"
+            >
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="camera"
+              >
+                Integrated Camera (174f:1176)
+              </MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl
+            sx={{
+              maxWidth: "16%",
+
+              minWidth: 120,
               "& .MuiOutlinedInput-root": {
                 color: "#a7a7a8",
                 "& fieldset": {
                   borderColor: "#777678",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#e2e2e3",
+                  borderColor: "#1bac98",
                 },
-                "&:focus fieldset": {
+                "&.Mui-focused fieldset": {
                   borderColor: "#1bac98",
                 },
               },
             }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment color="#efeff0" position="end">
-                  <Search sx={{ color: "#efeff0" }} />
-                </InputAdornment>
-              ),
-            }}
-            inputProps={{
-              style: {
-                color: "#efeff0",
-              },
-            }}
-            placeholder="Search"
-            variant="outlined"
-            label="Microphone"
-          />{" "}
-          <TextField
-            sx={{
-              marginLeft: "26px",
+          >
+            <InputLabel
+              style={{
+                color: "white",
+              }}
+              id="demo-simple-select-helper-label"
+            >
+              Microphone
+            </InputLabel>
 
+            <Select
+              MenuProps={{
+                PaperProps: {
+                  sx: {
+                    backgroundColor: "#424242",
+                    color: "#FFFFFF",
+                    maxHeight: "35%",
+                  },
+                },
+              }}
+              label="Microphone"
+            >
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="prd-mic"
+              >
+                Padrão - Microfone (Realtek(R) Audio)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="com-mic"
+              >
+                Comunicações - Microfone (Realtek(R) Audio)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="mic-realtek"
+              >
+                Microfone (Realtek(R) Audio)
+              </MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl
+            sx={{
+              maxWidth: "16%",
+
+              minWidth: 120,
               "& .MuiOutlinedInput-root": {
                 color: "#a7a7a8",
                 "& fieldset": {
                   borderColor: "#777678",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#e2e2e3",
+                  borderColor: "#1bac98",
                 },
-                "&:focus fieldset": {
+                "&.Mui-focused fieldset": {
                   borderColor: "#1bac98",
                 },
               },
             }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment color="#efeff0" position="end">
-                  <Search sx={{ color: "#efeff0" }} />
-                </InputAdornment>
-              ),
-            }}
-            inputProps={{
-              style: {
-                color: "#efeff0",
-              },
-            }}
-            placeholder="Search"
-            variant="outlined"
-            label="Speakers"
-          />
+          >
+            <InputLabel
+              style={{
+                color: "white",
+              }}
+              id="demo-simple-select-helper-label"
+            >
+              Speakers
+            </InputLabel>
+
+            <Select
+              MenuProps={{
+                PaperProps: {
+                  sx: {
+                    backgroundColor: "#424242",
+                    color: "#FFFFFF",
+                    maxHeight: "35%",
+                  },
+                },
+              }}
+              label="Speakers"
+            >
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="fones-prd"
+              >
+                Padrão - Fones de ouvido (Realtek(R) Audio)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="coms"
+              >
+                Comunicações - Fones de ouvido (Realtek(R) Audio)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="L22W931"
+              >
+                1 - L22W931 (AMD High Definition Audio Device)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="auto-falantes"
+              >
+                Alto-falantes (Realtek(R) Audio)
+              </MenuItem>
+              <MenuItem
+                sx={{ width: "100%", backgroundColor: "#424242" }}
+                value="fones"
+              >
+                Fones de ouvido (Realtek(R) Audio)
+              </MenuItem>
+            </Select>
+          </FormControl>
         </div>
       </div>
     </div>

@@ -16,9 +16,15 @@ import {
   GifTwoTone,
   Home,
   Link,
+  ManageAccounts,
+  OndemandVideo,
+  Redeem,
   Settings,
+  Subscriptions,
   VideoCall,
   VideoCameraBack,
+  VideoLibrary,
+  ViewCarousel,
 } from "@mui/icons-material";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
@@ -43,7 +49,7 @@ export default function Drawer({ open, setOpen }) {
     },
     {
       text: "Items to review",
-      icon: <VideoCall />,
+      icon: <VideoLibrary />,
       navLink: "/videos-to-review",
     },
     {
@@ -53,27 +59,27 @@ export default function Drawer({ open, setOpen }) {
     },
     {
       text: "Personal information",
-      icon: <AccountBox />,
+      icon: <ManageAccounts />,
       navLink: "/personal-info",
     },
     {
       text: "Review packages for sale",
-      icon: <GifTwoTone />,
+      icon: <Redeem />,
       navLink: "/packages",
     },
     {
       text: "Pactto website",
-      icon: <Link />,
+      icon: <ViewCarousel />,
       navLink: "/profile",
     },
     {
       text: "Reference video library",
-      icon: <VideoCall />,
+      icon: <OndemandVideo />,
       navLink: "/library",
     },
     {
       text: "Subscription",
-      icon: <VideoCameraBack />,
+      icon: <Subscriptions />,
       navLink: "/subscription",
     },
     {

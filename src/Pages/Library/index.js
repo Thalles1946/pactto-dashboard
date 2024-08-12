@@ -70,6 +70,12 @@ export default function Library() {
           </Typography>
         </Button>
       </div>
+      <Typography
+        sx={{ font: "14px Roboto", color: "#6E6E6E", margin: "16px 0px 0px" }}
+      >
+        Videos uploaded to the reference video library can be used in
+        side-by-side comparisons, or can be shared with learners directly.
+      </Typography>
     </>
   );
 }

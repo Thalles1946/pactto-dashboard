@@ -200,13 +200,14 @@ export default function Personal() {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-              "&:focus fieldset": {
+              "&.Mui-focused fieldset": {
                 borderColor: "#1bac98",
               },
             },
@@ -216,16 +217,16 @@ export default function Personal() {
           sx={{
             minWidth: 120,
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-            },
-            "&:focus": {
-              borderColor: "#1bac98",
+              "&.Mui-focused fieldset": {
+                borderColor: "#1bac98",
+              },
             },
           }}
           fullWidth
@@ -362,16 +363,16 @@ export default function Personal() {
           sx={{
             minWidth: 120,
             "& .MuiOutlinedInput-root": {
-              color: "rgb(255 255 255 / 87%)",
+              color: "#a7a7a8",
               "& fieldset": {
                 borderColor: "#777678",
               },
               "&:hover fieldset": {
-                borderColor: "#e2e2e3",
+                borderColor: "#1bac98",
               },
-            },
-            "&:focus": {
-              borderColor: "#1bac98",
+              "&.Mui-focused fieldset": {
+                borderColor: "#1bac98",
+              },
             },
           }}
           fullWidth
@@ -519,6 +520,28 @@ export default function Personal() {
           </Typography>
         </Button>
       </div>
+      <Typography
+        sx={{
+          font: "13px Roboto",
+          margin: "8px 0px 32px",
+          opacity: 0.8,
+        }}
+      >
+        To delete your Pactto account and remove your data permanently from all
+        Pactto apps and services, please{" "}
+        <u
+          onClick={() =>
+            alert(
+              "Function still doesn't exist!\nTo implement it, hire the developer 😁"
+            )
+          }
+          style={{
+            cursor: "pointer",
+          }}
+        >
+          click here.
+        </u>
+      </Typography>
     </div>
   );
 }

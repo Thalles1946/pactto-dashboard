@@ -1,4 +1,4 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, Divider, TextField, Typography } from "@mui/material";
 import React from "react";
 import "./index.css";
 import {
@@ -56,7 +56,9 @@ export default function Personal() {
             </div>
           </div>
           <div className="carousel">
-            <Typography sx={{ font: "16px Roboto", margin: "12px 0px" }}>
+            <Typography
+              sx={{ font: "16px Roboto", margin: "32px 0px", display: "flex" }}
+            >
               Carousel
             </Typography>
             <Button
@@ -65,6 +67,7 @@ export default function Personal() {
                 width: "30%",
                 borderRadius: "40px",
                 padding: "16px 32px",
+                margin: "2px",
                 backgroundColor: "#1dbba5",
                 lineHeight: "48px",
                 ":hover": {
@@ -157,6 +160,7 @@ export default function Personal() {
               }}
             />
           </div>
+
           <div className="about-me">
             <Typography
               sx={{
@@ -181,14 +185,14 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                  "&:focus fieldset": {
+                  "&.Mui-focused fieldset": {
                     borderColor: "#1bac98",
                   },
                 },
@@ -278,6 +282,7 @@ export default function Personal() {
                 className: "input-props",
               }}
             />
+
             <TextField
               className="add-award-field"
               label="Add award"
@@ -306,6 +311,15 @@ export default function Personal() {
                 className: "input-props",
               }}
             />
+            <Typography
+              sx={{
+                margin: "32px 0px 8px",
+                font: "16px Roboto",
+                display: "flex",
+              }}
+            >
+              Give me a follow
+            </Typography>
             <TextField
               InputLabelProps={{
                 style: {
@@ -315,22 +329,31 @@ export default function Personal() {
               sx={{
                 minWidth: 120,
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&:focus": {
-                  borderColor: "#1bac98",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
+                  },
                 },
               }}
               fullWidth
               label="Add social media channel"
               variant="outlined"
             />
+            <Typography
+              sx={{
+                margin: "32px 0px 8px",
+                font: "16px Roboto",
+                display: "flex",
+              }}
+            >
+              YouTube video
+            </Typography>
             <TextField
               InputLabelProps={{
                 style: {
@@ -340,22 +363,33 @@ export default function Personal() {
               sx={{
                 minWidth: 120,
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&:focus": {
-                  borderColor: "#1bac98",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
+                  },
                 },
               }}
               fullWidth
               label="Youtube video URL"
               variant="outlined"
             />
+
+            <Typography
+              sx={{
+                margin: "32px 0px 8px",
+                font: "16px Roboto",
+                display: "flex",
+              }}
+            >
+              Footer
+            </Typography>
+
             <TextField
               className="about-field"
               label="Quote"
@@ -370,14 +404,14 @@ export default function Personal() {
               }}
               sx={{
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                  "&:focus fieldset": {
+                  "&.Mui-focused fieldset": {
                     borderColor: "#1bac98",
                   },
                 },
@@ -392,16 +426,16 @@ export default function Personal() {
               sx={{
                 minWidth: 120,
                 "& .MuiOutlinedInput-root": {
-                  color: "rgb(255 255 255 / 87%)",
+                  color: "#a7a7a8",
                   "& fieldset": {
                     borderColor: "#777678",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#e2e2e3",
+                    borderColor: "#1bac98",
                   },
-                },
-                "&:focus": {
-                  borderColor: "#1bac98",
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#1bac98",
+                  },
                 },
               }}
               fullWidth

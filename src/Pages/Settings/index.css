@@ -27,4 +27,11 @@
 .colors-selector {
   display: flex;
   gap: 8px;
+  margin-bottom: 2%;
+}
+
+.device-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5%;
 }
