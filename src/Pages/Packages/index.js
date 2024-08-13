@@ -1,7 +1,9 @@
 import {
   Button,
   Checkbox,
+  Chip,
   Divider,
+  Fab,
   FormControl,
   FormControlLabel,
   FormGroup,
@@ -11,8 +13,30 @@ import {
   Typography,
 } from "@mui/material";
 import "./index.css";
+import { Add } from "@mui/icons-material";
+import React from "react";
 
 export default function Packages() {
+  const [tags, setTags] = React.useState([]);
+  const [newTag, setNewTag] = React.useState("");
+
+  function handleClickRemoveTag(removeIndex) {
+    let newArr = [];
+
+    for (let index = 0; index < tags.length; index++) {
+      if (index !== removeIndex) newArr.push(tags[index]);
+    }
+    setTags(newArr);
+  }
+
+  function handleClickAddTag() {
+    let newArr = tags;
+    newArr.push(newTag);
+    setNewTag("");
+
+    setTags(newArr);
+  }
+
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
       <Button
@@ -397,34 +421,63 @@ export default function Packages() {
                 The user will be able to select these options when purchasing
                 the package. They will become tags in your dashboard.
               </Typography>
-              <TextField
-                className="package-description-field"
-                label="Add option"
-                variant="outlined"
-                fullWidth
-                InputLabelProps={{
-                  style: {
-                    color: "white",
-                  },
-                }}
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    color: "#a7a7a8",
-                    "& fieldset": {
-                      borderColor: "#777678",
+              <div className="field-tags-add">
+                <TextField
+                  className="add-option-field"
+                  label="Add option"
+                  variant="outlined"
+                  fullWidth
+                  InputLabelProps={{
+                    style: {
+                      color: "white",
                     },
-                    "&:hover fieldset": {
-                      borderColor: "#1bac98",
+                  }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      color: "#a7a7a8",
+                      "& fieldset": {
+                        borderColor: "#777678",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "#1bac98",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#1bac98",
+                      },
                     },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#1bac98",
+                  }}
+                  inputProps={{
+                    className: "input-props",
+                  }}
+                  value={newTag}
+                  onChange={(e) => setNewTag(e.target.value)}
+                />
+                <Fab
+                  disabled={newTag.length === 0}
+                  sx={{
+                    margin: "8px",
+                    width: "18%",
+                    backgroundColor: "#1dbba5",
+                    "&:hover": {
+                      backgroundColor: "#1bac98",
                     },
-                  },
-                }}
-                inputProps={{
-                  className: "input-props",
-                }}
-              />
+                  }}
+                  onClick={() => handleClickAddTag()}
+                >
+                  <Add />
+                </Fab>
+              </div>
+              <div className="tags">
+                {tags.map((data, index) => (
+                  <Chip
+                    label={data}
+                    sx={{
+                      backgroundColor: "#1bac98",
+                    }}
+                    onDelete={() => handleClickRemoveTag(index)}
+                  />
+                ))}
+              </div>
             </div>
           </div>
           <div className="cost">

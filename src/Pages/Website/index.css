@@ -7,6 +7,17 @@
   border-color: #1bac98 !important;
 }
 
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.field-tags-add {
+  display: flex;
+  align-items: center;
+}
+
 .about-me {
   padding: 0px 24px;
   display: flex;
